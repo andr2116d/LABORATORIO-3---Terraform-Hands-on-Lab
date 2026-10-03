@@ -1,0 +1,9 @@
+# Archivos de mi mac
+.Ds_Store
+
+# Archivos de Terraform
+./IaS/.terraform/
+./IaS/*.tfstate
+./IaS/.terraform.lock.hcl
+
+
