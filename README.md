@@ -45,3 +45,12 @@ En la siguiente actividad se implementará con Terraform el sigueinte diagrama:
                 <li>Database: 5003</li>
             </ul>
 </ol>
+
+## Recursos terraform que da el proveedor de docker que se usaran en el proyecto
+
+- Resource (docker_image)
+- Resource (docker_network)
+- Resource (docker_container)
+- Resource (docker_volume)
+
+**Nota:** Estos recursos y como usarlos se encuentran en [Terraform Registry - docker](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/resources/container)
