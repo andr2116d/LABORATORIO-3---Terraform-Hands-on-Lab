@@ -54,3 +54,28 @@ En la siguiente actividad se implementará con Terraform el sigueinte diagrama:
 - Resource (docker_volume)
 
 **Nota:** Estos recursos y como usarlos se encuentran en [Terraform Registry - docker](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/resources/container)
+
+
+## Despliegue
+
+```bash
+cd IaS
+terraform init
+
+terraform workspace new dev
+terraform apply
+
+terraform workspace new qa
+terraform apply
+
+terraform workspace list
+```
+
+**Nota** Según dispositovo hay que configurar el host en provider de main.tf
+
+## Destruir
+
+```bash
+terraform workspace select dev && terraform destroy 
+terraform workspace select qa  && terraform destroy 
+```
